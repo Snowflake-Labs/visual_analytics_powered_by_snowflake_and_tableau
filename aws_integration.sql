@@ -1,6 +1,6 @@
 USE ROLE accountadmin;
 
-CREATE or REPLACE STORAGE INTEGRATION frostbyte_tasty_bytes.raw_customer.int_tastybytes_truckreviews
+CREATE or REPLACE STORAGE INTEGRATION int_tastybytes_truckreviews
   TYPE = EXTERNAL_STAGE
   STORAGE_PROVIDER = 'S3'
   STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::<your AWS account ID>:role/<give a name for IAM role>' -- ex: snow_s3_access_role
